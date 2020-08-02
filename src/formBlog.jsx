@@ -17,7 +17,7 @@ class FormBlog extends React.Component{
                     </FormGroup>
 
                     <FormGroup>
-                        <Button color="primary">Submit</Button>
+                        <Button color="primary" onClick={() => this.props.onClickSubmit()} >Submit</Button>
                     </FormGroup>
                 </Form>
             </React.Fragment>
