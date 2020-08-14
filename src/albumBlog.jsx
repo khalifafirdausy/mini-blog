@@ -14,10 +14,10 @@ class AlbumBlog extends React.Component{
                             <Card>
                                 <CardImg top width="100%" src={gambarku} />
                                 <CardBody>
-                                    <CardTitle>{data.title}</CardTitle>
+                                    <CardTitle><h6>{data.title}</h6></CardTitle>
                                     <CardText>{data.body}</CardText>
                                     <Button color="primary">Edit</Button>{' '}
-                                    <Button color="danger">Delete</Button>
+                                    <Button onClick={() => this.props.handleButtonDelete(data.id)} color="danger">Delete</Button>
                                 </CardBody>
                             </Card>
                         </Col>
