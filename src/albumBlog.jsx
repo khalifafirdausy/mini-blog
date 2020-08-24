@@ -16,7 +16,7 @@ class AlbumBlog extends React.Component{
                                 <CardBody>
                                     <CardTitle><h6>{data.title}</h6></CardTitle>
                                     <CardText>{data.body}</CardText>
-                                    <Button color="primary">Edit</Button>{' '}
+                                    <Button onClick={() => this.props.handleButtonChangeStatus(data)} color="warning">Edit</Button>{' '}
                                     <Button onClick={() => this.props.handleButtonDelete(data.id)} color="danger">Delete</Button>
                                 </CardBody>
                             </Card>
